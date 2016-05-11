@@ -1,0 +1,13 @@
+#vocabulary_words = {"integer" : "number", "loop" : "for or while", "function" : "def", "string" : "text"}
+
+my_name = "valentinacarlini"
+
+def check_letter(my_name):
+	dictionary = {}
+	for letter in my_name:
+		if letter not in dictionary:
+			times_letter_occurs = my_name.count(letter)
+			dictionary[letter] = times_letter_occurs
+	return dictionary
+
+print check_letter(my_name)
