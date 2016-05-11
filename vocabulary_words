@@ -1,13 +1,23 @@
-#vocabulary_words = {"integer" : "number", "loop" : "for or while", "function" : "def", "string" : "text"}
+# #vocabulary_words = {"integer" : "number", "loop" : "for or while", "function" : "def", "string" : "text"}
 
-my_name = "valentinacarlini"
+# my_name = "valentinacarlini"
 
-def check_letter(my_name):
-	dictionary = {}
-	for letter in my_name:
-		if letter not in dictionary:
-			times_letter_occurs = my_name.count(letter)
-			dictionary[letter] = times_letter_occurs
-	return dictionary
+# def check_letter(my_name):
+# 	dictionary = {}
+# 	for letter in my_name:
+# 		if letter not in dictionary:
+# 			times_letter_occurs = my_name.count(letter)
+# 			dictionary[letter] = times_letter_occurs
+# 	return dictionary
 
-print check_letter(my_name)
+# print check_letter(my_name)
+
+ prices = { "banana": 4, "apple": 2, "orange": 1.5, "pear": 3 }
+
+def most_expensive(prices):
+	highest_price_key = None
+	for key in prices:
+		if highest_price_key == None:
+			highest_price_key = key
+		elif prices[key] > prices[highest_price_key]:
+			highest_price 
