@@ -63,7 +63,7 @@ def add_item_list(key, value):
 	shopping_lists[key].append(value)
 
 def remove_list(key):
-	pass
+	del shopping_lists[key]
 
 def remove_item_list(key, value):
 	pass
